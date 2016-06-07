@@ -1,0 +1,7 @@
+{
+  "atom-text-editor": {
+    "ctrl-alt-p": "rhyming-dictionary:find-perfect-rhymes",
+    "ctrl-alt-n": "rhyming-dictionary:find-near-rhymes",
+    "ctrl-alt-a": "rhyming-dictionary:find-all-rhymes"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "genius",
+  "main": "./lib/index",
+  "version": "0.0.1",
+  "description": "An Atom package that retrieves lyrics from Genius (http://genius.com)",
+  "keywords": [],
+  "repository": "https://github.com/partials-music/atom-genius",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "activationCommands": {
+    "atom-workspace": [
+      "genius:lyric-search",
+      "genius:clear-cache"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "get-promise": "^1.4.0",
+    "json-stringify-safe": "^5.0.1",
+    "moment": "^2.13.0",
+    "nlp_compromise": "^4.12.1",
+    "node-genius": "^1.0.5",
+    "passport": "^0.3.2",
+    "passport-oauth2": "^1.3.0",
+    "passport-spotify": "^0.3.0",
+    "scrape-url": "^3.0.0",
+    "spotify-web-api-node": "^2.3.0"
+  },
+  "devDependencies": {
+    "standard": "^7.0.1"
+  },
+  "standard": {
+    "globals": [
+      "atom",
+      "describe",
+      "it",
+      "expect",
+      "beforeEach",
+      "jasmine",
+      "runs",
+      "spyOn",
+      "waitsFor",
+      "waitsForPromise",
+      "fit"
+    ]
+  },
+  "configSchema": {
+    "geniusAccessToken": {
+      "title": "Genius Access Token",
+      "description": "Lets us pull lyrics from the Genius API",
+      "type": "string",
+      "default": ""
+    },
+    "geniusClientId": {
+      "title": "Genius Client ID",
+      "description": "Tells the Genius API who we are",
+      "type": "string",
+      "default": ""
+    },
+    "geniusClientSecret": {
+      "title": "Genius Client Secret",
+      "description": "Proves our identity to the Genius API",
+      "type": "string",
+      "default": ""
+    }
+  }
+}
