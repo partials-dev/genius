@@ -16,6 +16,7 @@
     ]
   },
   "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "get-promise": "^1.4.0",
