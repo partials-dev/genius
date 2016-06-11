@@ -1,46 +1,40 @@
-# Atom Rhyming Dictionary
+# Atom Genius
 
-[![Build Status](https://travis-ci.org/partials-music/atom-rhyming-dictionary.svg?branch=master)](https://travis-ci.org/partials-music/atom-rhyming-dictionary)
+Easily search lyrics from [Genius](http://genius.com/) in [Atom](http://atom.io).
 
-Easily find rhymes in [Atom](http://atom.io).
-
-![Atom rhyming dictionary demo](https://cloud.githubusercontent.com/assets/5033974/15276372/2ff824d4-1ab4-11e6-99f9-873ffba70be8.gif)
-
-There are three commands:
-
-- **Find Perfect Rhymes** will find rhymes like *snow* and *flow*.
-- **Find Near Rhymes** will find rhymes like *morning* and *forming*.
-- **Find All Rhymes** will show you perfect and near rhymes together.
-
-If you have text selected, it will try to find rhymes to go with that. Otherwise, it'll find rhymes for the word under the cursor.
+![Atom Genius demo](https://cloud.githubusercontent.com/assets/5033974/15982032/636fa3c6-2f4c-11e6-95a2-3c2b8f74fd1a.gif)
 
 # Usage
 
-There are three ways to use the commands.
+Press `cmd-l y r` (as in `lyrics`) to open the lyric search bar. In detail:
 
-## Keyboard Shortcuts
+- while holding `command`, press `l`
+- release
+- press `y`
+- press `r`
 
-| Command | Shortcut |
-| :------------- | :------------- |
-| Find Perfect Rhymes | `ctrl-alt-p` |
-| Find Near Rhymes | `ctrl-alt-n` |
-| Find All Rhymes | `ctrl-alt-a` |
+Lyric search is also accessible from the [command palette](https://atom.io/packages/command-palette).
+Press `cmd-shift-p` (OS X) or `ctrl-shift-p` (Linux/Windows), then search for
+the command name. Available commands are:
 
-You can also customize the shortcuts that atom-rhyming-dictionary uses. First, open your keymap file (the `Atom -> Keymap...` menu item on OS X), then add something like:
+- `Genius: Lyric Search`
+- `Genius: Clear Cache`
+- `Genius: Clear Permissions` (clears OAuth tokens Atom-Genius uses to make API calls)
+
+## Customizing
+
+You can customize the shortcut that atom-genius uses. First,
+open your keymap file (`Atom -> Keymap...` on OS X), then add
+something like:
 
 ```
 'atom-text-editor':
-  'ctrl-cmd-p': 'rhyming-dictionary:find-perfect-rhymes'
-  'ctrl-cmd-n': 'rhyming-dictionary:find-near-rhymes'
-  'ctrl-cmd-a': 'rhyming-dictionary:find-all-rhymes'
+  'ctrl-cmd-l': 'genius:lyric-search'
 ```
 
-Your new keyboard shortcuts should work as soon as you save the keymap file. More information on keymaps is [here](http://flight-manual.atom.io/using-atom/sections/basic-customization/).
-
-## Command Palette
-
-Open the [command palette](https://atom.io/packages/command-palette) by pressing `cmd-shift-p` (OS X) or `ctrl-shift-p` (Linux/Windows), then search for the command name. Press enter to execute.
+Your new keyboard shortcuts should work as soon as you save the file.
+More information on keymaps is [here](http://flight-manual.atom.io/using-atom/sections/basic-customization/).
 
 ## Menu
 
-All the commands are available under the `Packages -> Rhyming Dictionary` menu, and also from the context menu.
+All the commands are also available under the `Packages -> Genius Lyrics` menu.

@@ -19,16 +19,11 @@
     "atom-space-pen-views": "^2.2.0",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
-    "get-promise": "^1.4.0",
-    "json-stringify-safe": "^5.0.1",
     "moment": "^2.13.0",
-    "nlp_compromise": "^4.12.1",
     "node-genius": "^1.0.5",
     "passport": "^0.3.2",
     "passport-oauth2": "^1.3.0",
-    "passport-spotify": "^0.3.0",
-    "scrape-url": "^3.0.0",
-    "spotify-web-api-node": "^2.3.0"
+    "scrape-url": "^3.0.0"
   },
   "devDependencies": {
     "standard": "^7.0.1"

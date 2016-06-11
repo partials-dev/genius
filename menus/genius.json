@@ -1,0 +1,26 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Genius Lyrics",
+          "submenu": [
+            {
+              "label": "Lyric Search",
+              "command": "genius:lyric-search"
+            },
+            {
+              "label": "Clear Cache",
+              "command": "'genius:clear-cache'"
+            },
+            {
+              "label": "Clear Permissions",
+              "command": "genius:clear-permissions"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
