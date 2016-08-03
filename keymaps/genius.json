@@ -1,5 +1,5 @@
 {
   "atom-text-editor": {
-    "cmd-l y r": "genius:lyric-search"
+    "ctrl-l": "genius:lyric-search"
   }
 }
